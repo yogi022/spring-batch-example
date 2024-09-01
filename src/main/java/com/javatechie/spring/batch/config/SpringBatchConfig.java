@@ -1,8 +1,5 @@
 package com.javatechie.spring.batch.config;
 
-import com.javatechie.spring.batch.entity.Customer;
-import com.javatechie.spring.batch.repository.CustomerRepository;
-import lombok.AllArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
@@ -19,6 +16,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 import org.springframework.core.task.TaskExecutor;
+
+import com.javatechie.spring.batch.entity.Customer;
+import com.javatechie.spring.batch.repository.CustomerRepository;
+
+import lombok.AllArgsConstructor;
 
 @Configuration
 @EnableBatchProcessing

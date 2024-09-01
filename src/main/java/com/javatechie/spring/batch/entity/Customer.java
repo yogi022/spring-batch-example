@@ -17,8 +17,8 @@ import javax.persistence.Table;
 public class Customer {
 
     @Id
-    @Column(name = "CUSTOMER_ID")
-    private int id;
+    @Column(name = "CUSTOMER_ID",length=50)
+    private String id;
     @Column(name = "FIRST_NAME")
     private String firstName;
     @Column(name = "LAST_NAME")
@@ -33,6 +33,5 @@ public class Customer {
     private String country;
     @Column(name = "DOB")
     private String dob;
-
 
 }
