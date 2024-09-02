@@ -10,11 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "CUSTOMERS_INFO",schema="old")
+@Table(name = "CUSTOMERS_INFO_New",schema="nnew")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Customer {
+public class CustomerNew {
 
     @Id
     @Column(name = "CUSTOMER_ID",length=50)
